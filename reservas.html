@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+input{
+display:block;
+}
+label{
+display:block;
+}
+#buscar{
+display:inline;
+float:right;
+}
+h1{
+display:inline;
+}
+#formulario{
+width:25%;
+height:100%;
+border:1px solid red;
+padding-top:25px;
+padding-bottom: 25px;
+}
+#video{
+display:inline;
+position:absolute;
+margin-top:10px;
+margin-left:5px;
+left:325px;
+top:325px;
+}
+#vista{
+height:200px;
+display:inline;
+position:absolute;
+top:125px;
+left:330px;
+margin-top:10px;
+margin-left:5px;
+}
+</style>
+</head>
+<body>
+<header>
+<img src="img/hotel.png" alt="icon">
+<h1>Hotel</h1>
+<input type="search" id="buscar" placeholder="Buscar">
+</header>
+<hr>
+<form action="" method="post" id="formulario">
+<h2>Form Reserva</h2>
+<label for="correo">Mail</label>
+<input type="email" id="correo"/>
+
+<label for="personas">Personas</label>
+<input type="number" id="personas" min="1" max="4"/>
+
+<label for="entrada">Entrada</label>
+<input type="date" id="entrada"/>
+
+<label for="salida">Salida</label>
+<input type="date" id="salida"/>
+
+<label for="noches">Noches</label>
+<input type="range" id="noche" min="1" max="7"/>
+
+<input type="checkbox" id="aceptar"/>
+<label for="Acepto">Acepto las condiciones</label>
+
+<input type="button" value="Reservar">
+</form>
+<div id="video">
+<iframe width="150" height="175" src="https://www.youtube.com/embed/8QX-u8XjgR0?showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
+</iframe>
+</div>
+<img src="img/vista.jpg" alt="foto" id="vista">
+<footer>
+<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1518.8479634518058!2d-3.6947499477537313!3d40.41558649478819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shotel+palace!5e0!3m2!1ses!2ses!4v1513773272889" width="600" height="150" frameborder="0" style="border:0" allowfullscreen>
+</iframe>
+</footer>
+</body>
+</html>
